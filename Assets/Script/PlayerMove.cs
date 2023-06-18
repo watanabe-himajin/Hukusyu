@@ -8,7 +8,9 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        a++;
+
+        a = a + 10;
+
     }
 
     // Update is called once per frame
@@ -16,7 +18,15 @@ public class PlayerMove : MonoBehaviour
     {
         if(a == 1)
         {
-            Debug.Log("a = 1�ł�");
+            Debug.Log("a = 1‚Å‚·");
+
+            a = a + 9;
+        }
+        else
+        {
+            Debug.Log("a‚ð1‚É‚µ‚Ü‚·B");
+            a--;
+
         }
     }
 }
